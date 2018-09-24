@@ -1,0 +1,503 @@
+
+body {
+	
+	display:flex;
+	flex: 1;
+	height: 100%;
+	
+	flex-wrap: wrap;
+	flex-direction: row;
+	background: url(Images/backgrPink.png), repeating-linear-gradient(90deg, #13264d, #1d91c0);
+	font-family: Helvetica;
+}
+
+h4 {
+	color: white;
+	font-size: 30px;
+}
+h3 {
+	color: grey;
+	font-size: 20px;
+}
+a {
+	color: white;
+	text-decoration: none;
+	font-weight: normal;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+ box-sizing: border-box;
+}
+header {
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #081b2f;
+  height: 65px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.dashboard {
+	color: grey;
+	font-weight: bold;
+	margin-left: 1%;
+	margin-right: 10%;
+	 font-size: 20px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.search input{
+	margin-left: 1%;
+	height: 40px;
+    background-color: #354a60;
+    font-size: 20px;
+    color: white;
+    border: none;
+
+}
+
+.search img {
+	
+	height: 25px;
+	width: 25px;
+}
+.search input {
+  width: 50%;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	margin-right: 10%;
+	
+}
+.logo img {
+	height: 70px;
+}
+main {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-flow: row wrap;
+	padding-bottom:50px;
+		
+}
+/*Profilbox  */
+aside {
+	flex:1;
+	margin-top:57px;
+	left: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 400px;
+	min-width: 200px;
+	max-width:200px;
+	background: #185ca2;
+	color: white;
+}
+
+.profil img {
+	border-radius: 50%;
+   	width: 100px;
+   	height: 100px;
+}
+#profil img {
+	margin-left: 10px;
+	height: 20px;
+	width: 20px;
+}
+
+.profil .beschreibung {
+	margin-left: 10px;
+	font-size: 12px;
+}
+#logout{
+	font-weight: bold;
+}
+
+wrap {
+	flex: 3;
+	width: 20%;
+	
+}
+
+wrapEnd {
+	
+	width: 100%;
+}
+
+/* Contentbox */
+/* Weltkarte */
+main .balken {
+	background: #081b2f;
+	height: 40px;
+	width: 900px;
+}
+
+main .balken h3 {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+ .land2 {
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #bf4df1;
+	font-weight: bold;
+}
+main .worldmap {
+	margin-left: 5%;
+	margin-right: 30%; 
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	max-width: 700px;
+	height: 550px;
+	margin-top:66px;
+	right: 10px;
+	
+}
+#world {
+	z-index: 49;
+	position: absolute;
+
+}
+#land {
+	z-index: 50;
+	position:absolute; 
+}
+
+#wrappingWorld {
+	width: 700px;
+	height: 383px;
+	margin-top: 10px;
+	
+}
+.land3 {
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #bf4df1;
+	font-weight: bold;
+}
+main .contentSection {
+	display: flex;
+	flex-flow: row-wrap;
+	background: rgba(8,27,47,0.4);
+	width: 900px;
+}
+/* Statistik */
+main .statistik {
+	margin-left: 5%; 
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	height: 600px;
+	margin-top:66px;
+	right: 10px;
+}
+	
+
+main .contentSection2 {
+	display: flex;
+	flex-direction: column;
+	
+	background: rgba(8,27,47,0.4);
+	height: 600px;
+	width: 300px;
+}
+main .balken2 {
+	background: #081b2f;
+	height: 40px;
+	width: 300px;
+}
+
+main .balken2 h3 {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+ .diagram {
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #bf4df1;
+	font-weight: bold;
+}
+.kmAndFotos  {
+	display: flex;
+	flex-direction: row;
+	justify-content : space-around;
+	bottom: 0px !important;
+	width: 270px;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+}
+.kmAndFotos img {
+	margin-left: 10px;
+	width: 50px;
+	height: 50px;
+	}
+.fotosFont {
+	
+	font-size: 13px;
+	font-weight: normal;
+}
+.kmFont {
+	
+	font-size: 13px;
+	font-weight: normal;
+}
+.fotos {
+	margin-left: 30px;
+	display:flex;
+	flex-direction: column;
+	margin-left: 20px;
+	
+}
+.km {
+	margin-left: 20px;
+	flex-direction: column;
+	display:flex;
+	justify-content : center;
+}
+.fotosAnzahl {
+	margin-left: 20px;
+}
+.kmAnzahl {
+	margin-left: 20px;
+}
+/* Reisetipps */
+main .reisetipps {
+	margin-left: 5%; 
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	height: 600px;
+	margin-top:66px;
+	right: 10px;
+}
+
+main .contentSection3 {
+	background: rgba(8,27,47,0.4);
+	height: 600px;
+	width: 300px;
+}
+main .balken3 {
+	background: #081b2f;
+	height: 40px;
+	width: 300px;
+}
+
+main .balken3 h3 {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+ .interessant {
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #bf4df1;
+	font-weight: bold;
+}
+.contentSection3 p {
+	color: white;
+	margin-left: 5px;
+}
+#reisetipps2 {
+	display: flex;
+	flex-direction:column;
+}
+#reisetippsBlock {
+	color: white;
+	height: 120px;
+	width: 250px;
+	margin-left: 30px;
+	display: flex;
+	flex-direction:row;
+/*	justify-content : space-around; */
+}
+#reisetippsBlock .img img {
+	height: 40px;
+	width: 40px;
+	
+}
+
+#Block {
+	padding-left: 50px !important; 
+}
+/* Erlebnisse */
+main .erlebnisse {
+	margin-left: 5%; 
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	height: 600px;
+	margin-top:66px;
+	right: 10px;
+	
+}
+main .contentSection4 {
+	background: rgba(8,27,47,0.4);
+	max-width: 700px;
+	height: 550px;
+}
+main .balken4 {
+	background: #081b2f;
+	height: 40px;
+	width: 300px;
+}
+
+main .balken4 h3 {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+ .erleben {
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #bf4df1;
+	font-weight: bold;
+}
+#erlebnisse2 {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.contentSection4 p {
+	color: white;
+	margin-left: 5px;
+}
+
+/* Galerie */
+
+main .galerie {
+	margin-left: 5%; 
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	max-width: 1050px;
+	margin-top:66px;
+	right: 10px;
+	
+}
+main .contentSection5 {
+	display: flex;
+	flex-direction: column;
+	background: rgba(8,27,47,0.4);
+	max-width: 1050px;
+	
+}
+
+main .balken5 {
+	background: #081b2f;
+	height: 40px;
+	max-width: 1050px;
+}
+
+main .balken5 h3 {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+ .bilder {
+	margin-top: 10px; 
+	margin-left: 10px;
+	color: #bf4df1;
+	font-weight: bold;
+}
+.contentSection5 img {
+	margin-top: 0px;
+	width: 200px;
+	height: 200px;
+	
+}
+.galerieanordnung {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+.mitglied {
+	display: flex;
+	flex-direction: row;
+	justify-content : space-between;
+}
+.land {
+	display: flex;
+	flex-direction: row;
+	justify-content : space-between;
+}
+/* Footer */
+
+ footer {
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	width: 100%;
+  	align-items: center;
+	background-color: #081b2f;
+	position: relative;
+	flex: none;
+	left: 0px;
+    bottom: -10px;
+}
+#footerContainer {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+}
+#travelContent {
+	display: flex;
+	flex-direction: row;
+	color: white;
+	margin-left: 30%;
+}
+#travelLogo {
+	margin-left: 30%;
+}
+#travelLogo img {
+	
+	width: 200px;
+}
+#travelImpressum {
+	
+	
+}
+#travelInfos {
+	margin-left: 5%;
+}
+#travelDeveleoper {
+	margin-left: 30%;
+}
+#travelDeveleoper img {
+	width: 100px;
+	
+}
+#travelDeveleoper p {
+	width: 40%;
+}
+#icons img {
+	width: 400px;
+	margin-left: 30%;
+}
+#wrapforFooter {
+	height: 100%;
+}
